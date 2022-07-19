@@ -17,13 +17,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        ListView lvMenu = findViewById(R.id.nation_list);
-//        lvMenu.setOnItemClickListener(new ListItemClickListener());
-
-
-//        Button btClick = findViewById(R.id.btClick);
-        HelloListener Listener = new HelloListener();  //リスナのインスタンスを生成
-        //btClick.setOnClickListener(Listener);         //ボタンにリスナを組み込む
+        HelloListener Listener = new HelloListener();
 
         Button btClear = findViewById(R.id.btClear);
         btClear.setOnClickListener(Listener);
@@ -34,16 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-//    private class ListItemClickListener implements AdapterView.OnItemClickListener{
-//
-//        @Override
-//        public void onItemClick(AdapterView<?> parent, View view, int position, long l) {
-//
-//
-//            Button btConfirm = findViewById(R.id.btConfirm);
-//            btConfirm.setOnClickListener((View.OnClickListener) new ListItemClickListener());
-//        }
-//    }
+
 
     private  class HelloListener implements View.OnClickListener{
         //イベントハンドラ <= イベント発生時の処理
